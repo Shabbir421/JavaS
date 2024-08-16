@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>hello</h1>
+  <script>
+     h1=document.querySelector("h1");
+    function changecolor(color,delay,nextcolorchange)
+    {
+          setTimeout(()=>{
+          h1.style.color=color;
+          nextcolorchange();
+    },delay);
+      
+    }
+    changecolor("red",1000,()=>{
+      changecolor("orange",1000,()=>{
+        changecolor("green",1000,()=>{
+          changecolor("blue",1000)
+        });
+      });
+    });
+    //its call nested of function to go callback hell----------------
+
+
+   //------------similar to this-------------
+    // setTimeout(()=>{
+    //       h1.style.color="red";
+    // },2000);
+    // setTimeout(()=>{
+    //       h1.style.color="green";
+    // },3000);
+    //its run after 2 sec to color change
+
+
+    // h1.style.color="red"
+
+  </script>
+  
+</body>
+</html>

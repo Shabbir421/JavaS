@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // js is single thread language that is one time only one operation perform
+    
+    let a=25;
+    console.log(a)
+    let b=10;
+    console.log(b)
+    console.log(a+b)
+    
+    //synchronous nature of code ( one bye one a sequence perform )
+
+    setTimeout(function()
+  {
+    console.log("apna college");
+  },2000);
+  console.log("hello.......")
+
+  //synchronus =>its not necessory to run sequence wise its run first or last / or its run sequence of code and  the delay of settimeout code after the timeout completed its call asynchronus  
+  </script>
+  
+</body>
+</html>
